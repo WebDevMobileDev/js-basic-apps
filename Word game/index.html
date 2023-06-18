@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+
+		.rounded-corners {
+			border-radius: 10px;
+			padding: 4px 10px;
+		}
+	</style>
+	<body
+		style="height: 100vh; display: flex; justify-content: center; align-items: center; background-color: blueviolet"
+	>
+		<div style="height: 80%; width: 500px; margin: 0px auto; padding: 40px; background-color: blanchedalmond">
+			<div style="display: flex; justify-content: space-evenly; margin-bottom: 50px">
+				<h1>Word Game</h1>
+				<div>
+					<div><small>Select difficulty level:</small></div>
+					<select class="rounded-corners" name="select" id="select">
+						<option value="1">One</option>
+						<option value="2">two</option>
+						<option value="3">three</option>
+					</select>
+				</div>
+			</div>
+			<div style="display: flex; justify-content: space-around">
+				<div class="left" style="width: 50%">
+					<form id="form" action="">
+						<input class="rounded-corners" type="text" id="input" placeholder="Enter word" />
+					</form>
+					<p id="gameOver" style="color: red; text-align: center; display: none">Game over</p>
+					<p id="count-down" style="color: blueviolet; font-size: xx-large; margin-top: 30px; text-align: center">20</p>
+					<button id="startOver" style="display: none">Start over</button>
+				</div>
+				<div class="right">
+					<h2>Word history</h2>
+					<div id="wordHistory" class="box rounded-corners" style="min-height: 200px; border: 1px solid black"></div>
+				</div>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

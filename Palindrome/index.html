@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		body {
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+
+		h1 {
+			margin-top: 150px;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		input {
+			margin-bottom: 30px;
+			width: 30%;
+			text-align: center;
+		}
+
+		button,
+		input {
+			padding: 10px 20px;
+		}
+	</style>
+	<body>
+		<h1>Palindrome challenge</h1>
+		<div>
+			<input id="palindrome" type="text" placeholder="Enter the word you want to verify" />
+			<button id="verify">Verify</button>
+			<p id="completion"></p>
+		</div>
+		<script src="./palin.js"></script>
+	</body>
+</html>
